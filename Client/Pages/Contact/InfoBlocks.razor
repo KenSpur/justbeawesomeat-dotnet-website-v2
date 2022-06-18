@@ -1,0 +1,19 @@
+﻿@using Data.ContactPage
+
+@foreach (var item in Info)
+{
+    <div class="contact-info-block">
+        <div class="ci-icon">
+            <i class="@item.IconClass"></i>
+        </div>
+        <div class="ci-text">
+            <h5>@item.Text</h5>
+        </div>
+    </div>
+}
+
+@code
+{
+    [Parameter]
+    public ICollection<Info> Info { get; set; } = new List<Info>();
+}

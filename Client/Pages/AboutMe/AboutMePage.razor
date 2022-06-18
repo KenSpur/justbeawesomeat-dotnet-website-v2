@@ -1,0 +1,75 @@
+﻿@page "/AboutMe"
+@using Client.Repositories
+@using Client.Services
+@using Data.AboutMePage
+
+<section id="animatePageRemoval" class="pt-page pt-page-current pt-page-moveFromRight" data-id="about_me">
+    <div class="border-block-top-110"></div>
+    <div class="section-inner">
+        <div class="section-title-block">
+            <div class="section-title-wrapper clearfix">
+                <h2 class="section-title">About Me</h2>
+                <h5 class="section-description">@AboutMePageData.Keywords</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                <div class="my-photo-block tilt-effect">
+                    <img src="@AboutMePageData.ImageSource" alt="me">
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <h3>@AboutMePageData.Title</h3>
+                <p>@AboutMePageData.Description</p>
+                <p><b>Future ambitions:</b></p>
+                <p><i>@AboutMePageData.FutureAmbitions</i></p>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+
+                <InfoBlock Info="@AboutMePageData.Info"/>
+
+                <SocialLinksBlock Links="@AboutMePageData.SocialLinks"/>
+
+            </div>
+        </div>
+
+        <ServicesBlock Services="@AboutMePageData.Services"/>
+        @*<TestimonialsBlock Testimonials="@AboutMePageData.Testimonials"/>*@
+        <FunFactsBlock FunFacts="@AboutMePageData.FunFacts"/>
+
+    </div>
+</section>
+
+@code
+{
+    [Inject] public INavigationService NavigationService { get; set; }
+    [Inject] public IJSRuntime Js { get; set; }
+    [Inject] public IAboutMePageDataRepository Repository { get; set; }
+
+    public AboutMePageData AboutMePageData { get; set; } = new AboutMePageData();
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationService.AnimatePageRemovalAsync = AnimatePageRemovalAsync;
+
+        AboutMePageData = await Repository.GetAboutMePageDataAsync();
+
+        StateHasChanged();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(!firstRender)
+            await Js.InvokeVoidAsync("window.initAboutMe");
+    }
+
+    private async Task AnimatePageRemovalAsync()
+    {
+        await Js.InvokeVoidAsync("window.animatePageRemoval", 17);
+
+        await Task.Delay(300);
+    }
+}

@@ -1,0 +1,31 @@
+﻿@using Client.Repositories
+@using Data.MainPage
+@inherits LayoutComponentBase
+
+<NavMenu Details="MainPageData.NavMenuDetails" />
+<ArrowNav />
+
+<!-- Main Content -->
+<div id="main" class="site-main">
+    <!-- Page changer wrapper -->
+    <div class="pt-wrapper" style="background-image: url(images/main_bg_light.jpg);">
+        <!-- Subpages -->
+        <div class="subpages">
+            @Body
+        </div>
+    </div>
+    <!-- /Page changer wrapper -->
+</div>
+<!-- /Main Content -->
+
+@code
+{
+    [Inject] public IMainPageDataRepository Repository { get; set; }
+
+    public MainPageData MainPageData { get; set; } = new MainPageData();
+
+    protected override async Task OnInitializedAsync()
+    {
+        MainPageData = await Repository.GetMainPageDataAsync();
+    }
+}

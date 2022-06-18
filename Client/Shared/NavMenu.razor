@@ -1,0 +1,90 @@
+﻿@using Client.Services
+@using Data.MainPage
+
+<!-- Navigation -->
+<!-- Header -->
+<header id="site_header" class="header mobile-menu-hide header-color-dark">
+    <div class="my-photo tilt-effect">
+        <img src="images/jba-monkey.jpg" alt="image">
+    </div>
+
+    <div class="site-title-block">
+        <h1 class="site-title">@Details.FullName</h1>
+    </div>
+
+    <div class="site-nav">
+        <!-- Main menu -->
+        <ul id="nav" class="site-main-menu">
+            <li style="cursor: pointer">
+                <a class="pt-trigger" @onclick="@NavigateToHomeAsync">
+                    <i class="menu-icon pe-7s-icon pe-7s-home"></i>Home
+                </a><!-- href value = data-id without # of .pt-page. -->
+            </li>
+            <li style="cursor: pointer">
+                <a class="pt-trigger" @onclick="@NavigateToAboutMeAsync">
+                    <i class="menu-icon pe-7s-icon pe-7s-user"></i>About me
+                </a>
+            </li>
+            <li style="cursor: pointer">
+                <a class="pt-trigger" @onclick="@NavigateToResumeAsync">
+                    <i class="menu-icon pe-7s-icon pe-7s-id"></i>Resume
+                </a>
+            </li>
+            @*<li>
+                    <a class="pt-trigger" @onclick="@NavigateToPortfolioAsync">
+                        <i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Portfolio
+                    </a>
+                </li>*@
+            <li style="cursor: pointer">
+                <a class="pt-trigger" @onclick="@NavigateToContactAsync">
+                    <i class="menu-icon pe-7s-icon pe-7s-mail"></i>Contact
+                </a>
+            </li>
+        </ul>
+        <!-- /Main menu -->
+    </div>
+    <!-- Navigation -->
+</header>
+<!-- /Header -->
+
+<!-- Mobile Header -->
+<div class="mobile-header mobile-visible">
+    <div class="mobile-logo-container">
+        <div class="mobile-site-title">@Details.FullName</div>
+    </div>
+
+    <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<!-- /Mobile Header -->
+
+@code
+{
+    [Inject] public IJSRuntime Js { get; set; }
+    [Inject] public INavigationService NavigationService { get; set; }
+
+    [Parameter] 
+    public NavMenuDetails Details { get; set; } = new NavMenuDetails();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+            await Js.InvokeVoidAsync("window.initNavMenu");
+    }
+
+    public async Task NavigateToHomeAsync()
+        => await NavigationService.NavigateToAsync("");
+
+    public async Task NavigateToAboutMeAsync()
+        => await NavigationService.NavigateToAsync("aboutme");
+
+    public async Task NavigateToResumeAsync()
+        => await NavigationService.NavigateToAsync("resume");
+
+    public async Task NavigateToPortfolioAsync()
+        => await NavigationService.NavigateToAsync("portfolio");
+
+    public async Task NavigateToContactAsync()
+        => await NavigationService.NavigateToAsync("contact");
+}

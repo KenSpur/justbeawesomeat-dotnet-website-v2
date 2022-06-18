@@ -1,0 +1,16 @@
+﻿@using Data.AboutMePage
+
+<ul class="info-list">
+    <li><span class="title">Age</span><span class="value">@Info.Age</span></li>
+    <li><span class="title">Residence</span><span class="value">@Info.Residence</span></li>
+    <li><span class="title">Address</span><span class="value">@Info.Address</span></li>
+    <li><span class="title">e-mail</span><span class="value"><a href="mailto:@Info.Email">@Info.Email</a></span></li>
+    <li><span class="title">Phone</span><span class="value">@Info.Phone</span></li>
+    <li><span class="title">Freelance</span><span class="value available">@Info.Availability</span></li>
+</ul>
+
+@code 
+{
+    [Parameter]
+    public Info Info { get; set; }
+}

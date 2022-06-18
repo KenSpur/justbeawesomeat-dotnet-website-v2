@@ -1,0 +1,62 @@
+﻿@page "/Resume"
+@using Client.Repositories
+@using Client.Services
+@using Data.ResumePage
+
+<section id="animatePageRemoval" class="pt-page pt-page-current pt-page-moveFromLeft" data-id="resume">
+    <div class="border-block-top-110"></div>
+    <div class="section-inner">
+        <div class="section-title-block">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Resume</h2>
+                <h5 class="section-description">@ResumePageData.YearsOfExperience Years of Experience</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 subpage-block">
+                <ExperiencesBlock Experiences="@ResumePageData.Experiences" />
+            </div>
+            <div class="col-sm-6 col-md-4 subpage-block">
+                @foreach (var skills in ResumePageData.SkillsCollection)
+                {
+                    <SkillsBlock Title="@skills.Title" Skills="@skills.Collection" />
+                }
+                <IndustryKnowledgeBlock IndustryKnowledge="@ResumePageData.IndustryKnowledge" />
+                <CertificationsBlock Certifications="@ResumePageData.Certifications" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                @*<div class="download-cv-block">
+                    <a class="button" target="_blank" href="#">Download CV</a>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</section>
+
+@code
+{
+    [Inject] public IJSRuntime Js { get; set; }
+    [Inject] public INavigationService NavigationService { get; set; }
+    [Inject] public IResumePageDataRepository Repository { get; set; }
+
+    public ResumePageData ResumePageData { get; set; } = new ResumePageData();
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationService.AnimatePageRemovalAsync = AnimatePageRemovalAsync;
+
+        ResumePageData = await Repository.GetResumePageDataAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+        => await Js.InvokeVoidAsync("window.initResume");
+
+    public async Task AnimatePageRemovalAsync()
+    {
+        await Js.InvokeVoidAsync("window.animatePageRemoval", 18);
+
+        await Task.Delay(300);
+    }
+}

@@ -1,0 +1,41 @@
+﻿@using Data.ResumePage
+
+<div class="block-title">
+    <h3>Experience</h3>
+</div>
+<div class="timeline">
+    @foreach (var experience in Experiences)
+    {
+        <!-- Single event -->
+        <div class="timeline-event te-primary">
+            <h5 class="event-date">@experience.Period</h5>
+            <h4 class="event-name">@experience.Title</h4>
+            @if (!string.IsNullOrWhiteSpace(experience.Client))
+            {
+                <span class="event-description">@experience.Client</span>
+            }
+            @if (!string.IsNullOrWhiteSpace(experience.Description))
+            {
+                <p><i>@experience.Description</i></p>
+            }
+            <p>
+                @foreach (var task in experience.Tasks)
+                {
+                    @($"- {task}") <br />
+                }
+            </p>
+            <ul class="tags">
+                @foreach (var tag in experience.Tags)
+                {
+                    <li><a>@tag</a></li>
+                }
+            </ul>
+        </div>
+    }
+</div>
+
+@code
+{
+    [Parameter]
+    public ICollection<Experience> Experiences { get; set; } = new List<Experience>();
+}

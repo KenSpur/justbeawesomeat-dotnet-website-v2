@@ -1,0 +1,59 @@
+﻿@page "/Contact"
+@using Client.Repositories
+@using Client.Services
+@using Data.ContactPage
+
+<!-- Contact Subpage -->
+<section id="animatePageRemoval" class="pt-page pt-page-current pt-page-moveFromTop" data-id="contact">
+    <div class="border-block-top-110"></div>
+    <div class="section-inner">
+        <div class="section-title-block">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Contact</h2>
+                <h5 class="section-description">Get in Touch</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6 subpage-block">
+                <div class="block-title">
+                    <h3>Get in Touch</h3>
+                </div>
+                <p>Send me a message</p>
+
+                <InfoBlocks Info="ContactPageData.Info" />
+            </div>
+
+            <div class="col-sm-6 col-md-6 subpage-block">
+                <ContactForm />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Subpage -->
+
+@code
+{
+    [Inject] public IJSRuntime Js { get; set; }
+    [Inject] public INavigationService NavigationService { get; set; }
+    [Inject] public IContactPageDataRepository Repository { get; set; }
+
+    public ContactPageData ContactPageData { get; set; } = new ContactPageData();
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationService.AnimatePageRemovalAsync = AnimatePageRemovalAsync;
+
+        ContactPageData = await Repository.GetContactPageDataAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+        => await Js.InvokeVoidAsync("window.initContact");
+
+    private async Task AnimatePageRemovalAsync()
+    {
+        await Js.InvokeVoidAsync("window.animatePageRemoval", 20);
+
+        await Task.Delay(300);
+    }
+}

@@ -1,0 +1,17 @@
+﻿<div class="block-title">
+    <h3>Industry Knowledge</h3>
+</div>
+
+<ul class="tags">
+    @foreach (var item in IndustryKnowledge)
+    {
+        <li><a>@item</a></li>
+    }
+</ul>
+
+<br />
+
+@code
+{
+    [Parameter] public ICollection<string> IndustryKnowledge { get; set; } = new List<string>();
+}

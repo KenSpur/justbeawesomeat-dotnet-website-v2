@@ -1,0 +1,56 @@
+﻿@using Client.Repositories
+@using Client.Services
+@using Data.ContactPage
+
+<div class="block-title">
+    <h3>Contact Form</h3>
+</div>
+
+<EditForm Model="Message" OnValidSubmit="OnValidSubmitAsync">
+    <DataAnnotationsValidator />
+
+    <div class="messages"></div>
+
+    <div class="controls">
+        <div class="form-group">
+            <InputText id="form_name" class="form-control" @bind-Value="@Message.Name" placeholder="Name" />
+            <div class="form-control-border"></div>
+            <i class="form-control-icon pe-7s-user"></i>
+            <ValidationMessage class="help-block with-errors" For="() => Message.Name" />
+        </div>
+
+        <div class="form-group">
+            <InputText id="form_email" class="form-control" @bind-Value="@Message.Email" placeholder="Email Address" />
+            <div class="form-control-border"></div>
+            <i class="form-control-icon pe-7s-mail"></i>
+            <ValidationMessage class="help-block with-errors" For="() => Message.Email" />
+        </div>
+
+        <div class="form-group">
+            <InputTextArea id="form_message" class="form-control" @bind-Value="@Message.Text" placeholder="Message for Me" rows="4" />
+            <div class="form-control-border"></div>
+            <i class="form-control-icon pe-7s-comment"></i>
+            <ValidationMessage class="help-block with-errors" For="() => Message.Text" />
+        </div>
+
+        <input type="submit" class="button btn-send" value="Send message">
+    </div>
+</EditForm>
+
+@code
+{
+    [Inject] public IJSRuntime Js { get; set; }
+    [Inject] public INavigationService NavigationService { get; set; }
+    [Inject] public IContactPageDataRepository Repository { get; set; }
+
+    public Message Message { get; set; } = new Message();
+
+    private async Task OnValidSubmitAsync()
+    {
+        await Repository.AddMessageAsync(Message);
+
+        await Js.InvokeVoidAsync("window.notify");
+
+        await NavigationService.NavigateToNextPageAsync();
+    }
+}

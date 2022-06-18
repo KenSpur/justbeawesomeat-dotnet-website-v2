@@ -1,0 +1,14 @@
+﻿@using Client.Services
+
+<!-- Arrows Nav -->
+<div class="lmpixels-arrows-nav">
+    <div class="lmpixels-arrow-left" @onclick="NavigationService.NavigateToPreviousPageAsync"><i class="pe-7s-icon pe-7s-angle-left"></i></div>
+    <div class="lmpixels-arrow-right" @onclick="NavigationService.NavigateToNextPageAsync"><i class="pe-7s-icon pe-7s-angle-right"></i></div>
+</div>
+<!-- /Arrows Nav -->
+
+@code
+{
+    [Inject] 
+    public INavigationService NavigationService { get; set; }
+}

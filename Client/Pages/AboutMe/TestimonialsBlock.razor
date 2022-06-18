@@ -1,0 +1,46 @@
+﻿@using Data.AboutMePage
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 subpage-block">
+        <div class="block-title">
+            <h3>Testimonials</h3>
+        </div>
+
+        <div class="testimonials owl-carousel">
+            @foreach (var testimonial in Testimonials)
+            {
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <!-- Testimonial Content -->
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"@testimonial.Text"</p>
+                        </div>
+                    </div>
+                    <!-- /Testimonial Content -->
+                    <!-- Testimonial Author -->
+                    <div class="testimonial-credits">
+                        <!-- Picture -->
+                        <div class="testimonial-picture">
+                            <img src="@testimonial.ImageSource" alt="">
+                        </div>
+                        <!-- /Picture -->
+                        <!-- Testimonial author information -->
+                        <div class="testimonial-author-info">
+                            <p class="testimonial-author">@testimonial.Author</p>
+                            <p class="testimonial-firm">@testimonial.Firm</p>
+                        </div>
+                    </div>
+                    <!-- /Testimonial author information -->
+                </div>
+                <!-- End of Testimonial 1 -->
+            }
+        </div>
+    </div>
+</div>
+
+@code
+{
+    [Parameter] public ICollection<Testimonial> Testimonials { get; set; } = new List<Testimonial>();
+}
