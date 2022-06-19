@@ -17,6 +17,7 @@ public class AboutMePageFunction
         _storageService = storageService;
     }
 
+    [FunctionName(nameof(AboutMePageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "aboutmepage")] HttpRequest req)
         => new OkObjectResult(await _storageService.GetDataAsync<AboutMePageData>());
 }

@@ -17,6 +17,7 @@ public class ContactPageFunction
         _storageService = storageService;
     }
 
+    [FunctionName(nameof(ContactPageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "contactpage")] HttpRequest req)
         => new OkObjectResult(await _storageService.GetDataAsync<ContactPageData>());
 }

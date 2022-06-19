@@ -17,6 +17,7 @@ public class MainPageFunction
         _storageService = storageService;
     }
 
+    [FunctionName(nameof(MainPageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "mainpage")] HttpRequest req)
         => new OkObjectResult(await _storageService.GetDataAsync<MainPageData>());
 }

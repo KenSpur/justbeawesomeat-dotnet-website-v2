@@ -17,6 +17,7 @@ public class IndexPageFunction
         _storageService = storageService;
     }
 
+    [FunctionName(nameof(IndexPageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "indexpage")] HttpRequest req)
         => new OkObjectResult(await _storageService.GetDataAsync<IndexPageData>());
 }

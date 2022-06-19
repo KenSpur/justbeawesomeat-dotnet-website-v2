@@ -19,6 +19,7 @@ public class ContactMessageFunction
         _options = options.Value;
     }
 
+    [FunctionName(nameof(ContactMessageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "contactmessage")] [FromBody] Message message)
     {
         var msg = new SendGridMessage();

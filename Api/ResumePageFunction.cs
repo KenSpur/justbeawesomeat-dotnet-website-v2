@@ -17,6 +17,7 @@ public class ResumePageFunction
         _storageService = storageService;
     }
 
+    [FunctionName(nameof(ResumePageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "resumepage")] HttpRequest req)
         => new OkObjectResult(await _storageService.GetDataAsync<ResumePageData>());
 }
