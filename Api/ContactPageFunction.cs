@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Data.ContactPage;
 using Api.Services;
+using System.Text.Json;
 
 namespace Api;
 
@@ -19,5 +20,5 @@ public class ContactPageFunction
 
     [FunctionName(nameof(ContactPageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "contactpage")] HttpRequest req)
-        => new OkObjectResult(await _storageService.GetDataAsync<ContactPageData>());
+        => new OkObjectResult(JsonSerializer.Serialize(await _storageService.GetDataAsync<ContactPageData>()));
 }

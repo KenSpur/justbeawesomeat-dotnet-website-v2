@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Data.IndexPage;
 using Api.Services;
+using System.Text.Json;
 
 namespace Api;
 
@@ -19,5 +20,5 @@ public class IndexPageFunction
 
     [FunctionName(nameof(IndexPageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "indexpage")] HttpRequest req)
-        => new OkObjectResult(await _storageService.GetDataAsync<IndexPageData>());
+        => new OkObjectResult(JsonSerializer.Serialize(await _storageService.GetDataAsync<IndexPageData>()));
 }

@@ -4,6 +4,8 @@ using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Api.Services;
 using Api.Services.Implementations;
 using Api.Options;
+using System.IO;
+using System.Reflection;
 
 [assembly: FunctionsStartup(typeof(Api.Startup))]
 
@@ -19,5 +21,15 @@ public class Startup : FunctionsStartup
             .GetSection(PageDataStorageOptions.Key).Bind(options));
 
         builder.Services.AddTransient<IStorageService, PageDataStorageService>();
+    }
+
+    public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
+    {
+        FunctionsHostBuilderContext context = builder.GetContext();
+
+        builder.ConfigurationBuilder
+            .AddUserSecrets(Assembly.GetExecutingAssembly(), optional: true, reloadOnChange: false)
+            .AddJsonFile(Path.Combine(context.ApplicationRootPath, $"appsettings.{context.EnvironmentName}.json"), optional: true, reloadOnChange: false)
+            .AddEnvironmentVariables();
     }
 }

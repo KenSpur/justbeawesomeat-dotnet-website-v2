@@ -5,6 +5,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Api.Services;
+using System.Text.Json;
 
 namespace Api;
 
@@ -19,5 +20,5 @@ public class AboutMePageFunction
 
     [FunctionName(nameof(AboutMePageFunction))]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "aboutmepage")] HttpRequest req)
-        => new OkObjectResult(await _storageService.GetDataAsync<AboutMePageData>());
+        => new OkObjectResult(JsonSerializer.Serialize(await _storageService.GetDataAsync<AboutMePageData>()));
 }
