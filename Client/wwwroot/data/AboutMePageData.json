@@ -1,0 +1,105 @@
+{
+    "keywords": "Highly driven, Ambitious, Passionate, Self-taught, Lifelong learner",
+    "image_source": "images/main_photo.png",
+    "title": ".Net Consultant",
+    "description": "I am a highly driven, ambitious and passionate self-taught full-stack .Net web/cloud & DevOps engineer, fascinated by how things work and endlessly excited by current and future possibilities",
+    "future_ambitions": "Cybersecurity architecture, Data science, Artificial intelligence, Business Engineering.",
+    "info": {
+        "age": 33,
+        "residence": "Belgium",
+        "Address": "9150 Kruibeke",
+        "email": "Spur.Ken@justbeawesomeat.net",
+        "phone": "\u002B32 *** ** ** **",
+        "availability": "Currently unavailable"
+    },
+    "social_links": [
+        {
+            "title": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ken-spur",
+            "icon_class": "fa fa-linkedin"
+        },
+        {
+            "title": "FaceBook",
+            "url": "https://www.facebook.com/Ken.Spur.JustBeAwesome",
+            "icon_class": "fa fa-facebook"
+        },
+        {
+            "title": "Github",
+            "url": "https://github.com/KenSpur",
+            "icon_class": "fa fa-github"
+        },
+        {
+            "title": "Microsoft",
+            "url": "https://docs.microsoft.com/en-us/users/KenSpur",
+            "icon_class": "fa fa-windows"
+        },
+        {
+            "title": "Pluralsight",
+            "url": "https://app.pluralsight.com/profile/ken-spur",
+            "icon_class": "fa fa-play"
+        },
+        {
+            "title": "Goodreads",
+            "url": "https://www.goodreads.com/user/show/90642412-ken-spur",
+            "icon_class": "fa fa-book"
+        }
+    ],
+    "services": [
+        {
+            "title": ".Net Consulting",
+            "icon_class": "pe-7s-icon pe-7s-rocket",
+            "description": "Be future ready!"
+        },
+        {
+            "title": "Full stack Web Development",
+            "icon_class": "pe-7s-icon pe-7s-browser",
+            "description": "Develop and improve your .Net Web solutions"
+        },
+        {
+            "title": "Full stack Cloud Development",
+            "icon_class": "pe-7s-icon pe-7s-cloud",
+            "description": "Develop and improve your Azure Cloud solutions"
+        },
+        {
+            "title": "DevOps Engineering",
+            "icon_class": "pe-7s-icon pe-7s-loop",
+            "description": "Develop and improve your Azure DevOps processes"
+        }
+    ],
+    "testimonials": [
+        {
+            "text": "Place holder text",
+            "image_source": null,
+            "author": "FirstName LastName",
+            "firm": "CompanyName"
+        },
+        {
+            "text": "Place holder text",
+            "image_source": null,
+            "author": "FirstName LastName",
+            "firm": "CompanyName"
+        }
+    ],
+    "fun_facts": [
+        {
+            "icon_class": "pe-7s-icon pe-7s-monitor",
+            "title": "Started coding journey since",
+            "value": "2007"
+        },
+        {
+            "icon_class": "pe-7s-icon pe-7s-coffee",
+            "title": "Coffee Consumed",
+            "value": "\u221E"
+        },
+        {
+            "icon_class": "pe-7s-icon pe-7s-next",
+            "title": "Pluralsight courses consumed",
+            "value": "250+"
+        },
+        {
+            "icon_class": "pe-7s-icon pe-7s-notebook",
+            "title": "Books read",
+            "value": "150+"
+        }
+    ]
+}

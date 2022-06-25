@@ -13,5 +13,5 @@ public class AboutMePageDataRepository : IAboutMePageDataRepository
     }
 
     public async Task<AboutMePageData> GetAboutMePageDataAsync()
-        => await _httpClient.GetFromJsonAsync<AboutMePageData>("api/aboutmepage");
+        => await _httpClient.GetFromJsonAsync<AboutMePageData>("data/AboutMePageData.json");
 }

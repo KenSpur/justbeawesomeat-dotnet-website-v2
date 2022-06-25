@@ -13,7 +13,7 @@ public class ContactPageDataRepository : IContactPageDataRepository
     }
 
     public async Task<ContactPageData> GetContactPageDataAsync()
-        => await _httpClient.GetFromJsonAsync<ContactPageData>("api/contactpage");
+        => await _httpClient.GetFromJsonAsync<ContactPageData>("data/ContactPageData.json");
 
     public async Task AddMessageAsync(Message message)
         => await _httpClient.PostAsJsonAsync("api/contactmessage", message);

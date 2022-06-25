@@ -10,8 +10,8 @@ builder.RootComponents.Add<App>("app");
 
 builder.Services.AddScoped<INavigationService, NavigationService>();
 
-builder.Services.AddHttpClient("Api", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
-builder.Services.AddTransient(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Api"));
+builder.Services.AddHttpClient("host", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+builder.Services.AddTransient(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("host"));
 
 builder.Services.AddTransient<IMainPageDataRepository, NavMenuDataRepository>();
 builder.Services.AddTransient<IIndexPageDataRepository, IndexPageDataRepository>();

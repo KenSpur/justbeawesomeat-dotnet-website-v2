@@ -13,5 +13,5 @@ public class NavMenuDataRepository : IMainPageDataRepository
     }
 
     public async Task<MainPageData> GetMainPageDataAsync()
-        => await _httpClient.GetFromJsonAsync<MainPageData>("api/mainpage");
+        => await _httpClient.GetFromJsonAsync<MainPageData>("data/MainPageData.json");
 }

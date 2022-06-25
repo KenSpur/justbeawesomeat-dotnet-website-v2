@@ -13,5 +13,5 @@ public class ResumePageDataRepository : IResumePageDataRepository
     }
 
     public async Task<ResumePageData> GetResumePageDataAsync()
-        => await _httpClient.GetFromJsonAsync<ResumePageData>("api/resumepage");
+        => await _httpClient.GetFromJsonAsync<ResumePageData>("data/ResumePageData.json");
 }

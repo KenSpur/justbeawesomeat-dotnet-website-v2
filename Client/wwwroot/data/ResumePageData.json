@@ -1,0 +1,590 @@
+{
+    "years_of_experience": 5,
+    "certifications": [
+        {
+            "period": "May - 2022",
+            "title": "Azure Security Engineer Associate",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure Security Engineer Associate"
+        },
+        {
+            "period": "Apr - 2022",
+            "title": "Azure Solutions Architect Expert",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure Solutions Architect Expert"
+        },
+        {
+            "period": "Apr - 2022",
+            "title": "Azure Administrator Associate",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure Administrator Associate"
+        },
+        {
+            "period": "Mar - 2022",
+            "title": "DevOps Engineer Expert",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: DevOps Engineer Expert"
+        },
+        {
+            "period": "Feb - 2022",
+            "title": "Azure Developer Associate",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure Developer Associate"
+        },
+        {
+            "period": "Feb - 2022",
+            "title": "Azure Fundamentals",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure Fundamentals"
+        },
+        {
+            "period": "Sep - 2014",
+            "title": "Microsoft Specialist",
+            "authority": "Microsoft",
+            "description": "Microsoft Specialist: Programming in C#"
+        },
+        {
+            "period": "Sep - 2014",
+            "title": "Microsoft Certified Professional",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified Professional"
+        }
+    ],
+    "experiences": [
+        {
+            "period": "Jun 2022 - Current",
+            "client": "Cegeka (Freelance)",
+            "sector": "Insurance",
+            "title": "Technical Consultant",
+            "description": "Azure integration project",
+            "tasks": [
+                "Build Azure integration solutions",
+                "Setup & maintain Azure IaC environments",
+                "Setup & maintain CI/CD pipelines"
+            ],
+            "tags": [
+                "Azure",
+                "Azure DevOps",
+                "Git",
+                "YAML",
+                "PowerShell",
+                "ARM Templates",
+                "Bicep",
+                "Azure Storage",
+                "API Management",
+                "Application Gateway",
+                "Azure Virtual Newtwork",
+                "Network Security Groups",
+                "Private DNS Zones",
+                "Private Endpoints",
+                "Logic Apps",
+                "Functions Apps",
+                "Service Bus",
+                "SQL Server",
+                "Sql Managed Instance",
+                "Data Factory",
+                "Application Insights",
+                "Key Vault",
+                "Azure Monitor",
+                "Log Analytics",
+                "RBAC",
+                "Security Center",
+                "Azure Policy",
+                "C#",
+                ".Net Core",
+                "REST",
+                "SOAP",
+                "Visual Studio 2019",
+                "Visual Studio 2022",
+                "VS Code",
+                "Agile",
+                "Scrumban"
+            ]
+        },
+        {
+            "period": "Apr 2020 - Current",
+            "client": "Freelance (Self Employed)",
+            "sector": null,
+            "title": "Technical Consultant",
+            "description": null,
+            "tasks": [],
+            "tags": []
+        },
+        {
+            "period": "Aug 2020 - Jan 2022",
+            "client": "Cegeka (Freelance)",
+            "sector": "Insurance",
+            "title": "Technical Consultant",
+            "description": "Azure integration project",
+            "tasks": [
+                "Build Azure integration solutions",
+                "Setup & maintain Azure IaC environments",
+                "Setup & maintain CI/CD pipelines"
+            ],
+            "tags": [
+                "Azure",
+                "Azure DevOps",
+                "Git",
+                "YAML",
+                "PowerShell",
+                "ARM Templates",
+                "Bicep",
+                "Azure Storage",
+                "API Management",
+                "Application Gateway",
+                "Azure Virtual Newtwork",
+                "Network Security Groups",
+                "Private DNS Zones",
+                "Private Endpoints",
+                "Logic Apps",
+                "Functions Apps",
+                "Service Bus",
+                "SQL Server",
+                "Sql Managed Instance",
+                "Data Factory",
+                "Application Insights",
+                "Key Vault",
+                "Azure Monitor",
+                "Log Analytics",
+                "RBAC",
+                "Security Center",
+                "Azure Policy",
+                "C#",
+                ".Net Core",
+                "REST",
+                "SOAP",
+                "Visual Studio 2019",
+                "Visual Studio 2022",
+                "VS Code",
+                "Agile",
+                "Scrumban"
+            ]
+        },
+        {
+            "period": "May 2020 - June 2020",
+            "client": "Project (Self Employed)",
+            "sector": null,
+            "title": ".Net Developer",
+            "description": "Design and develop resume website.",
+            "tasks": [
+                "Full Stack development"
+            ],
+            "tags": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "C#",
+                ".Net Core",
+                "Blazor web assembly",
+                "Git",
+                "GitHub",
+                "Azure DevOps",
+                "YAML",
+                "Azure",
+                "Azure storage",
+                "Linux",
+                "Visual Studio 2019"
+            ]
+        },
+        {
+            "period": "Jan 2020 - Mar 2020",
+            "client": "AllPhi (Internal)",
+            "sector": null,
+            "title": "System Administrator",
+            "description": "Help improve internally used IT infrastructure.",
+            "tasks": [
+                "Setup CI/CD pipelines for internal projects",
+                "Manage Azure cloud \u0026 Microsoft 365 Admin Environment"
+            ],
+            "tags": [
+                "Azure portal",
+                "Azure DevOps",
+                "Microsoft 365 Admin Environment"
+            ]
+        },
+        {
+            "period": "Dec 2019 - Mar 2020",
+            "client": "AllPhi (Client 3)",
+            "sector": "Health Care",
+            "title": "Technical consultant .Net",
+            "description": "Build data translation solution for company merger with external offices.",
+            "tasks": [
+                "Build solution that translates data dumps to domain events",
+                "Setup CI/CD pipelines",
+                "Setup Unit, Integration, and End to end tests"
+            ],
+            "tags": [
+                "C#",
+                ".Net Core",
+                "T-SQL",
+                "EF Core",
+                "NuGet",
+                "Topshelf",
+                "Azure DevOps",
+                "Git",
+                "YAML",
+                "PowerShell",
+                "SFTP",
+                "RabbitMQ",
+                "MS Test",
+                "Visual Studio 2019",
+                "VS Code",
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "period": "Nov 2019 - Dec 2019",
+            "client": "AllPhi (Client 3)",
+            "sector": "Health Care",
+            "title": "Technical consultant .Net",
+            "description": "Build documentation solution POC for internally used framework and micro services.",
+            "tasks": [
+                "Build small POC service that hosts DocFX documentation",
+                "Setup DocFX POC implementation for internally used framework and micro services",
+                "Setup CI/CD pipelines",
+                "Document solution and use"
+            ],
+            "tags": [
+                "C#",
+                ".Net Core",
+                "DocFX",
+                "Azure App Services",
+                "Azure AD",
+                "OpenID Connect",
+                "Azure Functions",
+                "Azure Storage",
+                "Azure DevOps",
+                "TFS",
+                "PowerShell",
+                "YAML",
+                "Markdown",
+                "Visual Studio 2019",
+                "VS Code"
+            ]
+        },
+        {
+            "period": "Jul 2019 - Nov 2019",
+            "client": "AllPhi (Client 3)",
+            "sector": "Health Care",
+            "title": "Technical consultant .Net",
+            "description": "Analyze and migrate internally used framework and micro services from .net core 1.x-preview/Net452/Portable to .net core 2.1 LTS/Net461/Net Standard.",
+            "tasks": [
+                "Analyze and migrate framework used to setup new micro services (120\u002B projects)",
+                "Analyze and migrate micro services using internal framework",
+                "Analyze and migrate tools used to setup and aid micro service development",
+                "Analyze and migrate CI/CD pipelines",
+                "Analyze requirements to migrate last Net461 dependencies to net Standard"
+            ],
+            "tags": [
+                "C#",
+                ".Net Core 1.x-Preview/2.1 LTS",
+                ".Net Framework 4.5.2/4.6.1",
+                "EF",
+                "EF Core",
+                "MSBuild",
+                "VSIX",
+                "XML",
+                "NuGet",
+                "Topshelf",
+                "RabbitMQ",
+                "MS Test",
+                "Azure DevOps",
+                "TFS",
+                "Visual Studio 2015-2019"
+            ]
+        },
+        {
+            "period": "Apr 2019 \u2013 Jul 2019",
+            "client": "AllPhi (Client 3)",
+            "sector": "Health Care",
+            "title": "Technical consultant .Net",
+            "description": "Reimplement route planner API to solve dependency issue, Develop, test, and maintain internally used micro services and applications.",
+            "tasks": [
+                "Analyze and implement Google Maps API solution",
+                "Backend development in micro service architecture",
+                "Setup Unit and Integration tests"
+            ],
+            "tags": [
+                "C#",
+                ".Net Core 1.x-Preview",
+                ".Net Framework 4.5.2",
+                "EF",
+                "NHibernate",
+                "NuGet",
+                "Hyper-V",
+                "Topshelf",
+                "WCF",
+                "T-SQL",
+                "RabbitMQ",
+                "MS Test",
+                "Azure DevOps",
+                "TFS",
+                "Google APIs",
+                "Visual Studio 2015",
+                "Micro service Architecture",
+                "DDD",
+                "CQRS",
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "period": "Feb 2019 - Apr 2019",
+            "client": "AllPhi (Client 2)",
+            "sector": "Non-profit",
+            "title": "Technical consultant .Net",
+            "description": "Improve maintainability, security, and implement new features for mobile application.",
+            "tasks": [
+                "Refactor mobile application and apply Enterprise application patterns",
+                "Refactor Admin portal and backend services and apply Enterprise application patterns",
+                "Migrate portable libraries to .net Standard",
+                "Migrate .Net Framework services to .Net Core",
+                "Refactor security, implement Identity Service and apply OIDC security standards",
+                "Implement new features",
+                "Setup CI/CD pipelines",
+                "Setup Azure environment"
+            ],
+            "tags": [
+                "Xamarin",
+                "XAML",
+                "C#",
+                ".Net Framework",
+                ".Net Core",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Razor",
+                "EF",
+                "EF Core",
+                "T-SQL",
+                "NuGet",
+                "Identity Server",
+                "OpenID Connect",
+                "OAuth",
+                "Azure Storage",
+                "Azure Functions",
+                "Azure App Services",
+                "Azure container registry",
+                "Docker",
+                "Azure DevOps",
+                "Git",
+                "YAML",
+                "PowerShell",
+                "App Center",
+                "Visual Studio 2017",
+                "VS Code",
+                "Micro service Architecture",
+                "DDD",
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "period": "Dec 2018 - Feb 2019",
+            "client": "AllPhi (Internal)",
+            "sector": null,
+            "title": "Technical consultant .Net",
+            "description": "Internal rebuild of internally used CRM/ERP application to micro service architecture approach.",
+            "tasks": [
+                "Setup Identity Service and apply OIDC security standards",
+                "Help Analyze and develop micro services"
+            ],
+            "tags": [
+                "C#",
+                ".Net Framework",
+                ".Net Core",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Razor",
+                "EF",
+                "EF Core",
+                "T-SQL",
+                "NuGet",
+                "Identity Server",
+                "OpenID Connect",
+                "OAuth",
+                "Azure AD",
+                "Azure Service Fabric",
+                "Azure Service Bus",
+                "Azure DevOps",
+                "Git",
+                "Visual studio 2017",
+                "Micro service Architecture",
+                "DDD",
+                "CQRS",
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "period": "Aug 2018 - Dec 2018",
+            "client": "AllPhi (Client 1)",
+            "sector": "BIM",
+            "title": "Technical consultant .Net",
+            "description": "Help hit client\u2019s deadline setting up new BIM sector application POC.",
+            "tasks": [
+                "Backend Web API development in micro service architecture",
+                "Setup Unit and Integration tests"
+            ],
+            "tags": [
+                "C#",
+                ".Net Core",
+                "EF Core",
+                "Swagger",
+                "XUnit",
+                "Azure DevOps",
+                "Git",
+                "Docker",
+                "AWS",
+                "Visual studio 2017",
+                "Micro service Architecture",
+                "DDD",
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "period": "Mar 2017 - Aug 2018",
+            "client": "Project (Self Employed)",
+            "sector": "BIM",
+            "title": ".Net Developer",
+            "description": "Design and develop Direct Sales ERP System, automate current employer\u2019s direct sales administration, and provide valuable Kpi\u2019s and insights for Direct sales consultants.",
+            "tasks": [
+                "Full Stack development"
+            ],
+            "tags": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "Ajax",
+                "Razor",
+                "TypeScript",
+                "Angular",
+                "C#",
+                ".Net Framework",
+                ".Net Core",
+                "Git",
+                "VSTS",
+                "Azure",
+                "EF",
+                "EF Core",
+                "T-SQL",
+                "Visual Studio",
+                "MVC",
+                "MVVM",
+                "DDD"
+            ]
+        }
+    ],
+    "skills_collection": [
+        {
+            "title": "Primary Skills",
+            "collection": [
+                {
+                    "title": "C#",
+                    "percentage": 90
+                },
+                {
+                    "title": ".Net Core",
+                    "percentage": 90
+                },
+                {
+                    "title": ".Net Framework",
+                    "percentage": 85
+                },
+                {
+                    "title": "Asp.Net",
+                    "percentage": 90
+                },
+                {
+                    "title": "Blazor",
+                    "percentage": 80
+                },
+                {
+                    "title": "T-SQL",
+                    "percentage": 75
+                },
+                {
+                    "title": "PowerShell",
+                    "percentage": 80
+                },
+                {
+                    "title": "Git",
+                    "percentage": 85
+                },
+                {
+                    "title": "Arm Templates",
+                    "percentage": 95
+                },
+                {
+                    "title": "Bicep",
+                    "percentage": 90
+                },
+                {
+                    "title": "Azure PaaS",
+                    "percentage": 95
+                },
+                {
+                    "title": "Azure IaaS",
+                    "percentage": 85
+                },
+                {
+                    "title": "Azure DevOps",
+                    "percentage": 90
+                }
+            ]
+        },
+        {
+            "title": "Other Skills",
+            "collection": [
+                {
+                    "title": "HTML",
+                    "percentage": 75
+                },
+                {
+                    "title": "CSS",
+                    "percentage": 60
+                },
+                {
+                    "title": "JavaScript",
+                    "percentage": 70
+                },
+                {
+                    "title": "TypeScript",
+                    "percentage": 70
+                },
+                {
+                    "title": "jQuery",
+                    "percentage": 70
+                },
+                {
+                    "title": "Angular",
+                    "percentage": 65
+                },
+                {
+                    "title": "Xamarin Forms",
+                    "percentage": 75
+                }
+            ]
+        }
+    ],
+    "industry_knowledge": [
+        "Cloud-native architecture",
+        "Web architecture",
+        "Design patterns",
+        "Enterprise application patterns",
+        "Clean coding principles",
+        "Test driven development",
+        "Domain driven design",
+        "DevOps practices",
+        "Lean principles",
+        "Container Orchestration",
+        "Agile project management"
+    ]
+}

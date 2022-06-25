@@ -13,5 +13,5 @@ public class IndexPageDataRepository : IIndexPageDataRepository
     }
 
     public async Task<IndexPageData> GetIndexPageDataAsync()
-        => await _httpClient.GetFromJsonAsync<IndexPageData>("api/indexpage");
+        => await _httpClient.GetFromJsonAsync<IndexPageData>("data/IndexPageData.json");
 }
