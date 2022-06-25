@@ -135,6 +135,10 @@
             animateOut: 'zoomOut',
             animateIn: 'zoomIn'
         });
+
+        $('.tilt-effect').tilt({
+
+        });
     };
 
     // init AboutMe
