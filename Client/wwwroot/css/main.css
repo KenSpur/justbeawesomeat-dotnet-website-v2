@@ -957,6 +957,7 @@ ul.social-links li:last-child a {
 /* =======================================
 7.1. Home subpage
 ======================================= */
+
 .table {
   display: table;
   table-layout: fixed;
@@ -980,6 +981,16 @@ ul.social-links li:last-child a {
   z-index: 1;
 }
 
+.mascot-img-block {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.mascot-img-block > img {
+  max-height: 400px;
+}
+
 .home-page-block h2 {
   color: #fd9129;
   text-align: center;
@@ -995,9 +1006,6 @@ ul.social-links li:last-child a {
   margin: 0 0 5px;
   text-align: center;
 }
-
-
-
 
 /* =======================================
 7.2. About Me subpage
