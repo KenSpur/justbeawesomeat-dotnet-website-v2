@@ -3,6 +3,12 @@
     "certifications": [
         {
             "period": "May - 2022",
+            "title": "Azure AI Fundamentals",
+            "authority": "Microsoft",
+            "description": "Microsoft Certified: Azure AI Fundamentals"
+        },
+        {
+            "period": "May - 2022",
             "title": "Azure Security Engineer Associate",
             "authority": "Microsoft",
             "description": "Microsoft Certified: Azure Security Engineer Associate"
