@@ -517,6 +517,10 @@
                     "percentage": 75
                 },
                 {
+                    "title": "KQL",
+                    "percentage": 75
+                },
+                {
                     "title": "PowerShell",
                     "percentage": 80
                 },
