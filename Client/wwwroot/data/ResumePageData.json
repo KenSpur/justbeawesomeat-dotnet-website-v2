@@ -58,10 +58,60 @@
     ],
     "experiences": [
         {
-            "period": "Jun 2022 - Current",
+            "period": "Jan 2023 - Current",
+            "client": "Project (Self Employed)",
+            "sector": null,
+            "title": "System Administrator",
+            "description": "Setup Home/Office Lab",
+            "tasks": [
+                "Setup Home/Office Lab",
+                "Maintain Home/Office Lab"
+            ],
+            "tags": [
+                "Proxmox",
+                "Linux",
+                "Terraform",
+                "Ansible",
+                "Kubernetes",
+                "Docker"
+            ]
+        },
+        {
+            "period": "Sep 2022 - Dec 2022",
+            "client": "Cegeka (Freelance)",
+            "sector": "Internal Project",
+            "title": "Test Engineer",
+            "description": "Cloud native project",
+            "tasks": [
+                "Build test framework",
+                "Setup automated tests"
+            ],
+            "tags": [
+                "GitHub",
+                "Git",
+                "GitHub Actions",
+                "Azure",
+                "Kubernetes",
+                "Docker",
+                "Linux",
+                "Bash",
+                "Git Ops",
+                "C#",
+                ".Net",
+                "SpecFlow",
+                "XUnit",
+                "Visual Studio 2022",
+                "VS Code",
+                "Agile",
+                "Jira",
+                "Confluence"
+            ]
+        },
+        {
+            "period": "Jun 2022 - Aug 2022",
             "client": "Cegeka (Freelance)",
             "sector": "Insurance",
-            "title": "Technical Consultant",
+            "title": "Cloud Engineer",
             "description": "Azure integration project",
             "tasks": [
                 "Build Azure integration solutions",
@@ -108,19 +158,10 @@
             ]
         },
         {
-            "period": "Apr 2020 - Current",
-            "client": "Freelance (Self Employed)",
-            "sector": null,
-            "title": "Technical Consultant",
-            "description": null,
-            "tasks": [],
-            "tags": []
-        },
-        {
             "period": "Aug 2020 - Jan 2022",
             "client": "Cegeka (Freelance)",
             "sector": "Insurance",
-            "title": "Technical Consultant",
+            "title": "Cloud Engineer",
             "description": "Azure integration project",
             "tasks": [
                 "Build Azure integration solutions",
