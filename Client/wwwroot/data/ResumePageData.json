@@ -71,6 +71,7 @@
                 "Proxmox",
                 "Linux",
                 "Terraform",
+                "Packer",
                 "Ansible",
                 "Kubernetes",
                 "Docker"
