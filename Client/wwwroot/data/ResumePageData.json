@@ -601,6 +601,10 @@
                     "percentage": 90
                 },
                 {
+                    "title": "Terraform",
+                    "percentage": 80
+                },
+                {
                     "title": "Azure PaaS",
                     "percentage": 95
                 },
