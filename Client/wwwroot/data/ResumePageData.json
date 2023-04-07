@@ -1,5 +1,5 @@
 {
-    "years_of_experience": 5,
+    "years_of_experience": 6,
     "certifications": [
         {
             "period": "May - 2022",
@@ -58,14 +58,32 @@
     ],
     "experiences": [
         {
+            "period": "Mar 2023 - Current",
+            "client": "Aquafin (Freelance)",
+            "sector": null,
+            "title": "Azure System Engineer",
+            "description": "Set up and maintain Azure Infrastructure and Solutions",
+            "tasks": [
+                "Setup Azure Infrastructure and Solutions",
+                "Maintain Azure Infrastructure and Solutions"
+            ],
+            "tags": [
+                "Azure",
+                "Azure DevOps",
+                "Terraform"
+            ]
+        },
+        {
             "period": "Jan 2023 - Current",
             "client": "Project (Self Employed)",
             "sector": null,
-            "title": "System Administrator",
-            "description": "Setup Home/Office Lab",
+            "title": "System Engineer",
+            "description": "Set up and Maintain Internal Infrastructure",
             "tasks": [
-                "Setup Home/Office Lab",
-                "Maintain Home/Office Lab"
+                "Set up Home/Office Lab",
+                "Maintain Home/Office Lab",
+                "Set up Wordpress Infrastructure",
+                "Maintain Wordpress Infrastructure"
             ],
             "tags": [
                 "Proxmox",
@@ -74,7 +92,11 @@
                 "Packer",
                 "Ansible",
                 "Kubernetes",
-                "Docker"
+                "Docker",
+                "Wordpress",
+                "Mysql",
+                "Azure",
+                "GitHub"
             ]
         },
         {
