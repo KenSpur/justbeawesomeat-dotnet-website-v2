@@ -602,7 +602,11 @@
                 },
                 {
                     "title": "Terraform",
-                    "percentage": 80
+                    "percentage": 90
+                },
+                {
+                    "title": "Ansible",
+                    "percentage": 85
                 },
                 {
                     "title": "Azure PaaS",
