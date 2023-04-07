@@ -64,8 +64,8 @@
             "title": "Azure System Engineer",
             "description": "Set up and maintain Azure Infrastructure and Solutions",
             "tasks": [
-                "Setup Azure Infrastructure and Solutions",
-                "Maintain Azure Infrastructure and Solutions"
+                "Setup Azure infrastructure and solutions",
+                "Maintain Azure infrastructure and solutions"
             ],
             "tags": [
                 "Azure",
@@ -80,10 +80,10 @@
             "title": "System Engineer",
             "description": "Set up and Maintain Internal Infrastructure",
             "tasks": [
-                "Set up Home/Office Lab",
-                "Maintain Home/Office Lab",
-                "Set up Wordpress Infrastructure",
-                "Maintain Wordpress Infrastructure"
+                "Set up home/office lab",
+                "Maintain home/office lab",
+                "Set up wordpress infrastructure",
+                "Maintain wordpress infrastructure"
             ],
             "tags": [
                 "Proxmox",
